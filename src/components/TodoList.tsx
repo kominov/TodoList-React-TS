@@ -20,8 +20,9 @@ export const TodoList: React.FC<TodoListProps> = ({
         onRemove(id);
     }
     return (
-
+     
         <ul>
+            
             {todos.map(todo => {
                 const classes = ['todo']
                 if (todo.completed) {

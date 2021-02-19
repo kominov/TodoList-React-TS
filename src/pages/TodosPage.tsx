@@ -15,6 +15,7 @@ export const TodosPage: React.FC = () => {
     useEffect(() => {
         localStorage.setItem('todos', JSON.stringify(todos))
     }, [todos])
+
     const addHandler = (title: string) => {
         const newTodo = {
             title: title,
